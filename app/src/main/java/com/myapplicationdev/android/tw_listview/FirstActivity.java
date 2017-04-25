@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -12,6 +13,8 @@ public class FirstActivity extends AppCompatActivity {
     ListView lv;
     ArrayList<String> al;
     ArrayAdapter<String> aa;
+
+    TextView tvTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
