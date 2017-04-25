@@ -8,12 +8,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
 
     ListView lv;
     TextView tvYear;
-    ArrayAdapter aa;
+    ModuleAdapter aa;
     ArrayList<Module> module;
 
 
@@ -24,6 +25,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
         tvYear = (TextView) findViewById(R.id.tvYear);
+        lv = (ListView) findViewById(R.id.lvModules);
 
         module = new ArrayList<Module>();
         module.add(new Module("C208", true));
